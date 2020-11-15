@@ -1,1 +1,17 @@
-::-webkit-scrollbar-track-piece ;
+:root {
+  --background-color: #ffffff;
+  --background-section: rgba(245, 244, 250, 1);
+  --background-button: rgba(245, 244, 250, 1);
+  --hero-background: rgba(47, 48, 58, 1);
+  --main-color: rgba(117, 117, 117, 1);
+  --secondary-color: rgba(33, 150, 243, 1);
+  --title: rgba(33, 33, 33, 1);
+  --text-white: #ffffff;
+  --footer-white: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--background-color);
+  color: var(--main-color);
+}
