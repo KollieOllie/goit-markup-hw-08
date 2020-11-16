@@ -2,16 +2,162 @@
   --background-color: #ffffff;
   --background-section: rgba(245, 244, 250, 1);
   --background-button: rgba(245, 244, 250, 1);
-  --hero-background: rgba(47, 48, 58, 1);
+  --background-hero: rgba(47, 48, 58, 1);
   --main-color: rgba(117, 117, 117, 1);
   --secondary-color: rgba(33, 150, 243, 1);
   --title: rgba(33, 33, 33, 1);
   --text-white: #ffffff;
   --footer-white: rgba(255, 255, 255, 0.6);
+  --main-font: Raleway, sans-serif;
+}
+* {
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--background-color);
   color: var(--main-color);
+  letter-spacing: 0.03em;
+  margin-left: 10px;
+}
+
+/* =========== COMPONENTS ============ */
+.hover:hover,
+.hover:focus {
+  color: var(--secondary-color);
+}
+.button {
+  background-color: var(--background-button);
+  color: var(--title);
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--secondary-color);
+  color: var(--text-white);
+}
+
+/* =========== END COMPONENTS ========= */
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.l-white {
+  color: var(--text-white);
+}
+.l-dark {
+  color: var(--title);
+}
+.logo-studio {
+  color: var(--secondary-color);
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title);
+}
+
+.current {
+  color: var(--secondary-color);
+}
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+.footer {
+  background-color: var(--background-hero);
+}
+
+/*================ hero ================*/
+
+.hero-box {
+  width: 1600px;
+  height: 200px;
+  background-color: var(--background-hero);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-white);
+  background-color: var(--background-hero);
+}
+
+.hero-bt {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--text-white);
+  background-color: var(--secondary-color);
+}
+
+/* ================  Features ===========*/
+.mark-key {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title);
+}
+
+.mark-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* ================ What are we doing ================*/
+.case-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--title);
+}
+
+/* ================ our team ================ */
+.main-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--title);
+}
+.name-job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* ================ footer  ================*/
+
+.main-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--text-white);
+}
+.contacts-footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--footer-white);
 }
