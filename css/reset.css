@@ -2,6 +2,21 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+  font-style: normal;
+}
+
 html,
 body,
 div,
@@ -101,7 +116,8 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section,
+img {
   display: block;
 }
 /* body {

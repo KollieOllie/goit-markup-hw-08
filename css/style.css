@@ -10,17 +10,12 @@
   --footer-white: rgba(255, 255, 255, 0.6);
   --main-font: Raleway, sans-serif;
 }
-* {
-  text-decoration: none;
-  list-style: none;
-}
 
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--background-color);
   color: var(--main-color);
   letter-spacing: 0.03em;
-  margin-left: 10px;
 }
 
 /* =========== COMPONENTS ============ */
@@ -41,13 +36,39 @@ body {
   color: var(--text-white);
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+/* .oll {
+  width: 1600px;
+} */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 /* =========== END COMPONENTS ========= */
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+
+  margin-right: 93px;
 }
 .l-white {
   color: var(--text-white);
@@ -84,8 +105,6 @@ body {
 /*================ hero ================*/
 
 .hero-box {
-  width: 1600px;
-  height: 200px;
   background-color: var(--background-hero);
 }
 
