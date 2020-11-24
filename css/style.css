@@ -26,11 +26,11 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
-/* .flex {
+.flex {
   display: flex;
   flex-wrap: wrap;
-  align-items: center; 
-}  */
+  align-items: center;
+}
 
 .hover:hover,
 .hover:focus {
@@ -74,6 +74,10 @@ body {
 
   margin-right: 93px;
 }
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .l-white {
   color: var(--text-white);
 }
@@ -92,6 +96,7 @@ body {
 }
 
 .address {
+  margin-left: auto;
 }
 .contacts {
   font-weight: 500;
@@ -99,6 +104,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
+}
+.address-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 /*================ hero ================*/
