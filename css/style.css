@@ -6,7 +6,7 @@
   --main-color: rgba(117, 117, 117, 1);
   --secondary-color: rgba(33, 150, 243, 1);
   --title: rgba(33, 33, 33, 1);
-  --text-white: #ffffff;
+  --text-white: rgba(255, 255, 255, 1);
   --footer-white: rgba(255, 255, 255, 0.6);
   --main-font: Raleway, sans-serif;
   --background-team: rgba(245, 244, 250, 1);
@@ -27,6 +27,16 @@ body {
 /* =========== COMPONENTS ============ */
 .hover.current {
   color: var(--secondary-color);
+}
+.hover.current::after {
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: var(--secondary-color);
+  border-radius: 2px;
 }
 
 .container {
@@ -99,12 +109,12 @@ body {
   color: var(--secondary-color);
 }
 .nav-link {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title);
-
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -237,6 +247,25 @@ body {
 }
 .case-title:not(:last-child) {
   margin-right: 30px;
+}
+.case-title {
+  position: relative;
+}
+.case-item {
+  position: absolute;
+  font-style: normal;
+  bottom: 0px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-white);
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /* ================ our team ================ */
