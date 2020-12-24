@@ -379,13 +379,12 @@
           </ul>
         </div>
         <div class="footer-subscribe-form">
-          <form action="" class="js-speaker-form">
+          <p class="footer-call-to-action">Подпишитесь на рассылку</p>
+          <form action="#" class="js-speaker-form">
             <div class="form-group-footer">
-              <div class="form-box">
-                <label class="footer-call-to-action" for="subscribe-form-email">Подпишитесь на рассылку</label>
-                <input type="email" name="subscribe-email" id="subscribe-form-email" class="footer-subscribe-email" placeholder="E-mail" />
-              </div>
-              <button type="submit" class="footer-subscribe-button hover">
+              <label for="subscribe-form-email"></label>
+              <input type="email" name="subscribe-email" id="subscribe-form-email" class="footer-subscribe-email" placeholder="E-mail" />
+              <button type="submit" class="footer-subscribe-button">
                 Подписаться
                 <svg class="footer-subscribe-icon" width="24" height="24">
                   <use href="./img/sprite.svg.svg#icon-icon-send"></use>
@@ -405,7 +404,7 @@
           </svg>
         </button>
         <p class="modal-call-to-action">Оставьте свои данные, мы вам перезвоним</p>
-        <form action="" class="modal-form modal-js-speaker-form">
+        <form action="#" class="modal-form modal-js-speaker-form">
           <div class="form-group">
             <label for="modal-name" class="modal-label">Имя</label>
             <div class="modal-icon-container">
@@ -435,12 +434,12 @@
           </div>
           <div class="form-group-comment">
             <label for="modal-comment" class="modal-label">Комментарий</label>
-            <textarea class="modal-comment" name="comment" id="modal-comment" cols="" rows="" placeholder="Введите текст"></textarea>
+            <textarea class="modal-comment" name="comment" id="modal-comment" rows="10" placeholder="Введите текст"></textarea>
           </div>
           <div class="checkbox-group">
-            <label for="modal-agree" class="modal-label-agree">
+            <label for="modal-agree" class="modal-checkbox">
               <input type="checkbox" class="modal-checkbox-hidden" name="agree" id="modal-agree" value="agree" />
-              <span class="modal-checkbox"></span>Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="">Условия договора</a>
+              <span class="modal-label-agree"></span>Соглашаюсь с рассылкой и принимаю<a class="modal-link" href="">Условия договора</a>
             </label>
           </div>
           <button type="submit" class="modal-submit">Отправить</button>
