@@ -741,7 +741,7 @@ body {
 }
 .modal-checkbox-hidden:checked + .modal-label-agree::after {
   background-color: var(--secondary-color);
-  background-image: url('/img/icon\ check.svg');
+  background-image: url('../img/icon-check.svg');
   background-origin: border-box;
   background-size: contain;
   border-color: var(--secondary-color);
@@ -749,7 +749,6 @@ body {
 .modal-checkbox-hidden:focus + .modal-label-agree::after {
   border-color: var(--secondary-color);
 }
-
 .modal-link {
   font-family: Roboto;
   font-weight: 400;
