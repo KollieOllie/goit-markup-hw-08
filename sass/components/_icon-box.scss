@@ -1,0 +1,29 @@
+.icon-box {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-link {
+  transition: $transition-property, $transition-duration-timing;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.icon-link:hover,
+.icon-link:focus {
+  background-color: $secondary-color;
+}
+
+.icon-link:hover svg,
+.icon-link:focus svg {
+  fill: $text-white;
+}
+
+.logo-social {
+  transition: $transition-property, $transition-duration-timing;
+  width: 20px;
+  height: 20px;
+  fill: $icon-main;
+}

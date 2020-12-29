@@ -1,0 +1,33 @@
+.case-work .container {
+  padding-bottom: 94px;
+}
+
+.case-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: $title;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.case-title:not(:last-child) {
+  margin-right: 30px;
+}
+.case-title {
+  position: relative;
+}
+.case-item {
+  position: absolute;
+  font-style: normal;
+  bottom: 0px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-white;
+  text-align: center;
+  padding: 27px 15px;
+  background: rgba(47, 48, 58, 0.8);
+}

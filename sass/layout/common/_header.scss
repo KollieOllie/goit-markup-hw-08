@@ -1,0 +1,66 @@
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.l-white {
+  color: $text-white;
+}
+.l-dark {
+  color: $title;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+}
+.logo-studio {
+  color: $secondary-color;
+}
+.nav-link {
+  transition: $transition-property, $transition-duration-timing;
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $title;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+/* ====== contacts */
+.address {
+  margin-left: auto;
+}
+.contacts {
+  transition: $transition-property, $transition-duration-timing;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $main-color;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contacts-icon {
+  transition: $transition-property, $transition-duration-timing;
+  margin-right: 10px;
+  fill: $main-color;
+}
+.address-item:not(:last-child) {
+  margin-right: 50px;
+}

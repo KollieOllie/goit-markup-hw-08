@@ -1,0 +1,17 @@
+.navigation-list {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.navigation-item:not(:last-child) {
+  margin-right: 8px;
+}
+.button.point {
+  padding: 6px 22px;
+  border-color: transparent;
+  border-radius: 4px;
+}
+.point {
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}

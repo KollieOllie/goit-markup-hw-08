@@ -1,0 +1,37 @@
+.features .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features-list {
+  display: flex;
+}
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+.features-item {
+  width: 270px;
+}
+
+.features-box {
+  background-color: $icon-hover;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.mark-key {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $title;
+  margin-bottom: 10px;
+}
+
+.mark-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}

@@ -1,0 +1,43 @@
+.customers .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-box {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-list:not(:nth-child(6n)) {
+  margin-right: 30px;
+}
+
+.clients-list {
+  width: calc((100% - 150px) / 6);
+  height: 90px;
+}
+
+.clients-link {
+  transition: $transition-property, $transition-duration-timing;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $icon-main;
+  border-radius: 4px;
+  height: 90px;
+}
+.clients-icon {
+  fill: $icon-main;
+  transition: $transition-property, $transition-duration-timing;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: $icon-bac-hover;
+}
+
+.clients-link:hover svg,
+.clients-link:focus svg {
+  fill: $icon-bac-hover;
+}
