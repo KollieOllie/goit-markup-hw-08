@@ -1,20 +1,19 @@
-.case-work .container {
-  padding-bottom: 94px;
+.case-work {
+  .container {
+    padding-bottom: 94px;
+  }
 }
 
-.case-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  color: $title;
-  margin-bottom: 50px;
-  text-align: center;
+.case-list {
+  @include centered-flex();
 }
-.case-title:not(:last-child) {
-  margin-right: 30px;
-}
+
 .case-title {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .case-item {
   position: absolute;

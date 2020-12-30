@@ -1,6 +1,7 @@
 .navigation-list {
   justify-content: center;
   margin-bottom: 50px;
+  @include centered-flex();
 }
 .navigation-item:not(:last-child) {
   margin-right: 8px;

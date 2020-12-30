@@ -1,9 +1,13 @@
-.header .container {
-  display: flex;
-  align-items: center;
-}
 .header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navigation {
+  @include centered-flex();
 }
 
 .logo {
@@ -11,6 +15,13 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+
+  &-studio {
+    color: $secondary-color;
+  }
+}
+.nav-list {
+  @include centered-flex();
 }
 
 .nav-item:not(:last-child) {
@@ -26,9 +37,7 @@
   padding-bottom: 24px;
   margin-right: 93px;
 }
-.logo-studio {
-  color: $secondary-color;
-}
+
 .nav-link {
   transition: $transition-property, $transition-duration-timing;
   position: relative;
@@ -40,8 +49,11 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 /* ====== contacts */
+
 .address {
+  @include centered-flex();
   margin-left: auto;
 }
 .contacts {
@@ -55,12 +67,14 @@
   color: $main-color;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  &-icon {
+    transition: $transition-property, $transition-duration-timing;
+    margin-right: 10px;
+    fill: $main-color;
+  }
 }
-.contacts-icon {
-  transition: $transition-property, $transition-duration-timing;
-  margin-right: 10px;
-  fill: $main-color;
-}
+
 .address-item:not(:last-child) {
   margin-right: 50px;
 }
