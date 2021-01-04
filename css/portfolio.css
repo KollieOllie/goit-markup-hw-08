@@ -148,6 +148,17 @@ a {
   text-decoration: none;
 }
 
+.none {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .footer-subscribe-email, .footer-subscribe-email::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -157,7 +168,7 @@ a {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto";
   background-color: #ffffff;
   color: #757575;
   letter-spacing: 0.03em;
@@ -194,21 +205,10 @@ body {
   fill: #2196f3;
 }
 
-.none {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .button {
   background-color: #f5f4fa;
   color: #212121;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 16px;
   transition: color, fill, background-color, box-shadow, border-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -463,7 +463,7 @@ body {
 
 .appeal {
   margin-bottom: 20px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

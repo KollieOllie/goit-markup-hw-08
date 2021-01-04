@@ -109,7 +109,7 @@
   border-radius: 4px;
   font-weight: $font-weight-lighter;
   font-size: $font-size-normal;
-  line-height: 1.14;
+  line-height: $line-height-main;
   letter-spacing: 0.01em;
   transition: border-color, $transition-duration-timing;
   &:focus-within {
@@ -141,7 +141,7 @@
   border-radius: 4px;
   font-weight: $font-weight-lighter;
   font-size: $font-size-normal;
-  line-height: 1.14;
+  line-height: $line-height-main;
   letter-spacing: 0.01em;
   transition: border-color, $transition-duration-timing;
 
@@ -159,7 +159,7 @@
     font-family: $base-fonts;
     font-weight: $font-weight-lighter;
     font-size: $font-size-normal;
-    line-height: 1.14;
+    line-height: $line-height-main;
     letter-spacing: 0.01em;
     color: $main-color-s;
   }
@@ -179,7 +179,7 @@
   font-style: normal;
   font-weight: $font-weight-lighter;
   font-size: $font-size-normal;
-  line-height: 1.71;
+  line-height: $line-height-secondary;
   letter-spacing: 0.03em;
   color: $main-color;
 
@@ -219,7 +219,7 @@
   font-family: $base-fonts;
   font-weight: $font-weight-lighter;
   font-size: $font-size-normal;
-  line-height: 1.71;
+  line-height: $line-height-secondary;
   letter-spacing: 0.03em;
   font-style: normal;
   margin-left: 0.25em;

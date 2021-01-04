@@ -2,5 +2,5 @@ body {
   font-family: $base-fonts;
   background-color: $background-color;
   color: $main-color;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter-spacing;
 }

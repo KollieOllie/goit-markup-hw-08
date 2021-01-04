@@ -1,6 +1,5 @@
 // base
 @import './base/reset';
-@import './base/common';
 @import './base/is-hidden';
 
 // utils
@@ -9,6 +8,7 @@
 @import './utils/mixins';
 
 // components
+@import './components/common';
 @import './components/container';
 @import './components/navigation-change';
 @import './components/button';

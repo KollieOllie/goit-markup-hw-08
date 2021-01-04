@@ -17,7 +17,7 @@
   font-style: normal;
   font-weight: $font-weight-bold;
   font-size: $font-size-normal;
-  line-height: 1.14;
+  line-height: $line-height-main;
   text-transform: uppercase;
   color: $text-white;
 }
@@ -53,7 +53,7 @@
   font-style: normal;
   font-weight: $font-weight-lighter;
   font-size: $font-size-normal;
-  line-height: 1.71;
+  line-height: $line-height-secondary;
   color: $text-white;
   margin-bottom: 9px;
 }
@@ -67,7 +67,7 @@
   font-style: normal;
   font-weight: $font-weight-lighter;
   font-size: $font-size-normal;
-  line-height: 1.71;
+  line-height: $line-height-secondary;
   color: $footer-white;
   transition: $transition-property, $transition-duration-timing;
 
@@ -80,7 +80,7 @@
   margin-bottom: 20px;
   font-weight: $font-weight-bold;
   font-size: $font-size-normal;
-  line-height: 1.14;
+  line-height: $line-height-main;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $text-white;
