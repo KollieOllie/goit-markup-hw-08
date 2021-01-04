@@ -1,15 +1,16 @@
+// base
+@import './base/reset';
+@import './base/common';
+@import './base/is-hidden';
+
 // utils
-@import './utils/reset';
 @import './utils/variables';
 @import './utils/utilitiess';
-
-// base
-@import './base/common';
+@import './utils/mixins';
 
 // components
 @import './components/container';
 @import './components/navigation-change';
-@import './components/is-hidden';
 @import './components/button';
 @import './components/case-premier';
 @import './components/icon-box';

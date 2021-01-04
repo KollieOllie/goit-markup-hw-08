@@ -1,11 +1,6 @@
-@mixin centered-flex($type: flex, $cross-axsis: center) {
-  display: $type;
-  align-items: $cross-axsis;
-}
-
 %email {
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: $font-weight-lighter;
+  font-size: $font-size-above;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: $footer-white;

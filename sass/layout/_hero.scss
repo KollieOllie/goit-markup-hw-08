@@ -17,7 +17,7 @@
 }
 
 .hero-title {
-  font-weight: 900;
+  font-weight: $font-weight-bolder;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -32,8 +32,8 @@
 .hero-bt {
   transition: all, $transition-duration-timing;
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-above;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: $text-white;
