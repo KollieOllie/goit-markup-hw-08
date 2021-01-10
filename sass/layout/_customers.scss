@@ -20,7 +20,7 @@
 }
 
 .clients-link {
-  transition: $transition-property, $transition-duration-timing;
+  transition: all, $transition-duration-timing;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@
 }
 .clients-icon {
   fill: $icon-main;
-  transition: $transition-property, $transition-duration-timing;
+  transition: all, $transition-duration-timing;
 }
 
 .clients-link:hover svg,

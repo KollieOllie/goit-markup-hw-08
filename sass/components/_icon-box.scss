@@ -3,7 +3,7 @@
   justify-content: space-between;
 }
 .icon-link {
-  transition: $transition-property, $transition-duration-timing;
+  transition: all, $transition-duration-timing;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,11 +19,11 @@
 
 .icon-link:hover svg,
 .icon-link:focus svg {
-  fill: $text-white;
+  fill: $text-secondary;
 }
 
 .logo-social {
-  transition: $transition-property, $transition-duration-timing;
+  transition: all, $transition-duration-timing;
   width: 20px;
   height: 20px;
   fill: $icon-main;

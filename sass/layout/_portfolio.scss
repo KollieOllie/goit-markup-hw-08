@@ -32,7 +32,7 @@
 
 .portfolio-link {
   display: block;
-  transition: $transition-property, $transition-duration-timing;
+  transition: all, $transition-duration-timing;
 
   &:hover,
   &:focus {

@@ -19,7 +19,7 @@
   font-size: $font-size-normal;
   line-height: $line-height-main;
   text-transform: uppercase;
-  color: $text-white;
+  color: $text-secondary;
 }
 
 .footer-social {
@@ -32,7 +32,7 @@
 
 .footer-social .icon-link {
   background-color: $background-footer;
-  transition: $transition-property, $transition-duration-timing;
+  transition: all, $transition-duration-timing;
 
   &:hover,
   &:focus {
@@ -41,8 +41,8 @@
 }
 
 .footer-social .logo-social {
-  fill: $text-white;
-  transition: $transition-property, $transition-duration-timing;
+  fill: $text-secondary;
+  transition: all, $transition-duration-timing;
 }
 
 .logo.l-white {
@@ -54,7 +54,7 @@
   font-weight: $font-weight-lighter;
   font-size: $font-size-normal;
   line-height: $line-height-secondary;
-  color: $text-white;
+  color: $text-secondary;
   margin-bottom: 9px;
 }
 .main-address {
@@ -68,8 +68,8 @@
   font-weight: $font-weight-lighter;
   font-size: $font-size-normal;
   line-height: $line-height-secondary;
-  color: $footer-white;
-  transition: $transition-property, $transition-duration-timing;
+  color: $footer-base;
+  transition: all, $transition-duration-timing;
 
   &:not(:last-child) {
     margin-bottom: 9px;
@@ -83,7 +83,7 @@
   line-height: $line-height-main;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: $text-white;
+  color: $text-secondary;
 }
 
 .form-group-footer {
@@ -95,7 +95,7 @@
 .footer-subscribe-email {
   margin-right: 12px;
   padding: 14px 16px;
-  border: 1px solid $footer-white-s;
+  border: 1px solid $footer-mini;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
@@ -108,7 +108,7 @@
 }
 
 .footer-subscribe-button {
-  transition: $transition-property, $transition-duration-timing;
+  transition: all, $transition-duration-timing;
   padding: 10px 28px;
   display: flex;
   align-items: center;
@@ -118,7 +118,7 @@
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-  color: $text-white;
+  color: $text-secondary;
   background: $secondary-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.21);
   border-radius: 4px;
@@ -126,12 +126,12 @@
 
   &:hover,
   &:focus {
-    background-color: $footer-s;
+    background-color: $footer-secondary;
     cursor: pointer;
   }
 }
 
 .footer-subscribe-icon {
   margin-left: 10px;
-  fill: $text-white;
+  fill: $text-secondary;
 }
