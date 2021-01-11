@@ -11,9 +11,9 @@
 
   <body>
     <!--========================= header ==========-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
-        <!-- Top line -->
+       
         <nav class="navigation">
           <a class="logo l-dark" href="/index.html" target="_blank" rel="first"><span class="logo-studio">Web</span>Studio</a>
           <ul class="nav-list">
@@ -28,7 +28,7 @@
             </li>
           </ul>
         </nav>
-        <!--================ contacts -->
+        
         <ul class="address">
           <li class="address-item">
             <a class="contacts change" href="mailto:info@devstudio.com">
@@ -47,7 +47,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <!--======================= hero ==================-->
       <section class="hero-box">
@@ -59,7 +59,6 @@
       <!--====================== Features ===================-->
       <section class="features">
         <div class="container">
-          <h2 class="none">Особенности</h2>
           <ul class="features-list">
             <li class="features-item">
               <div class="features-box">
@@ -106,19 +105,31 @@
           <h2 class="case-premier">Чем мы занимаемся</h2>
           <ul class="case-list">
             <li class="case-title">
-              <img src="./img/prog.jpg" alt="код програмирования" width="370" height="294" />
+              <picture>
+                <source srcset="" media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="" media="(min-width: 1200px)" />
+                <img src="./img/prog.jpg" alt="код програмирования" width="370" height="294" />
+              </picture>
               <div class="case-item">
                 <h3 class="case-text">Десктопные приложения</h3>
               </div>
             </li>
             <li class="case-title">
-              <img src="./img/app.jpg" alt="смартфон и ноутбук" width="370" height="294" />
+              <picture>
+                <source srcset="" media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="" media="(min-width: 1200px)" />
+                <img src="./img/app.jpg" alt="смартфон и ноутбук" width="370" height="294" />
+              </picture>
               <div class="case-item">
                 <h3 class="case-text">Мобильные приложения</h3>
               </div>
             </li>
             <li class="case-title">
-              <img src="./img/design.jpg" alt="палитра цвета" width="370" height="294" />
+              <picture>
+                <source srcset="" media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="" media="(min-width: 1200px)" />
+                <img src="./img/design.jpg" alt="палитра цвета" width="370" height="294" />
+              </picture>
               <div class="case-item">
                 <h3 class="case-text">Дизайнерские решения</h3>
               </div>
@@ -132,7 +143,15 @@
           <h2 class="case-premier">Наша команда</h2>
           <ul class="premier-list">
             <li class="team-item">
-              <img class="team-link" src="./img/Product_Designer.jpg" alt="сотрудник продуктового дизайнера" width="270" height="260" />
+              <picture>
+                <source srcset="/img/Product_Designer.jpg 1x, /img/Product_Designer.jpg 2x" media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="/img/Product_Designer.jpg 1x, /img/Product_Designer.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="/img/Product_Designer.jpg 1x, /img/Product_Designer.jpg 2x" media="(min-width: 768px)" type="image/webp" />
+                <source srcset="/img/Product_Designer.jpg 1x, /img/Product_Designer.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="/img/Product_Designer.jpg 1x, /img/Product_Designer.jpg 2x" media="(min-width: 320px)" type="image/webp" />
+                <source srcset="/img/Product_Designer.jpg 1x, /img/Product_Designer.jpg 2x" media="(min-width: 320px)" />
+                <img class="team-link" src="/img/Product_Designer.jpg" alt="сотрудник продуктового дизайнера" />
+              </picture>
               <div class="team-aside">
                 <h3 class="main-name">Игорь Демьяненко</h3>
                 <p class="name-job">Product Designer</p>
@@ -169,7 +188,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img class="team-link" src="./img/Frontend_Developer.jpg" alt="сотрудник Фронт-энд разработчик" width="270" height="260" />
+              <picture>
+                <source srcset="/img/Frontend_Developer.jpg 1x, /img/Frontend_Developer.jpg 2x" media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="/img/Frontend_Developer.jpg 1x, /img/Frontend_Developer.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="/img/Frontend_Developer.jpg 1x, /img/Frontend_Developer.jpg 2x" media="(min-width: 768px)" type="image/webp" />
+                <source srcset="/img/Frontend_Developer.jpg 1x, /img/Frontend_Developer.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="/img/Frontend_Developer.jpg 1x, /img/Frontend_Developer.jpg 2x" media="(min-width: 320px)" type="image/webp" />
+                <source srcset="/img/Frontend_Developer.jpg 1x, /img/Frontend_Developer.jpg 2x" media="(min-width: 320px)" />
+                <img class="team-link" src="/img/Frontend_Developer.jpg" alt="сотрудник Фронт-энд разработчик" />
+              </picture>
               <div class="team-aside">
                 <h3 class="main-name">Ольга Репина</h3>
                 <p class="name-job">Frontend Developer</p>
@@ -206,7 +233,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img class="team-link" src="./img/Marketing.jpg" alt="сотрудник маркетолог" width="270" height="260" />
+              <picture>
+                <source srcset="/img/Marketing.jpg 1x, /img/Marketing.jpg 2x" media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="/img/Marketing.jpg 1x, /img/Marketing.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="/img/Marketing.jpg 1x, /img/Marketing.jpg 2x" media="(min-width: 768px)" type="image/webp" />
+                <source srcset="/img/Marketing.jpg 1x, /img/Marketing.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="/img/Marketing.jpg 1x, /img/Marketing.jpg 2x" media="(min-width: 320px)" type="image/webp" />
+                <source srcset="/img/Marketing.jpg 1x, /img/Marketing.jpg 2x" media="(min-width: 320px)" />
+                <img class="team-link" src="/img/Marketing.jpg" alt="сотрудник маркетолог" />
+              </picture>
               <div class="team-aside">
                 <h3 class="main-name">Николай Тарасов</h3>
                 <p class="name-job">Marketing</p>
@@ -243,7 +278,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img class="team-link" src="./img/UI_Designer.jpg" alt="сотрудник дизайнер интерфейса" width="270" height="260" />
+              <picture>
+                <source srcset="/img/UI_Designer.jpg 1x, /img/UI_Designer.jpg 2x" media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="/img/UI_Designer.jpg 1x, /img/UI_Designer.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="/img/UI_Designer.jpg 1x, /img/UI_Designer.jpg 2x" media="(min-width: 768px)" type="image/webp" />
+                <source srcset="/img/UI_Designer.jpg 1x, /img/UI_Designer.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="/img/UI_Designer.jpg 1x, /img/UI_Designer.jpg 2x" media="(min-width: 320px)" type="image/webp" />
+                <source srcset="/img/UI_Designer.jpg 1x, /img/UI_Designer.jpg 2x" media="(min-width: 320px)" />
+                <img class="team-link" src="/img/UI_Designer.jpg" alt="сотрудник дизайнер интерфейса" />
+              </picture>
               <div class="team-aside">
                 <h3 class="main-name">Михаил Ермаков</h3>
                 <p class="name-job">UI Designer</p>
@@ -283,7 +326,7 @@
         </div>
       </section>
       <!--========================== Regular customers ========================-->
-      <section class="customers">
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="case-premier">Постоянные клиенты</h2>
           <ul class="clients-box">
@@ -331,10 +374,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--========================== footer ======================-->
-    <footer class="block-footer">
+    <!-- <footer class="block-footer">
       <div class="container">
         <div class="contacts-box">
           <a class="logo l-white" href="/index.html" target="_blank" rel="first"><span class="logo-studio">Web</span>Studio</a>
@@ -392,9 +435,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!--================= modal ======================-->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-modal" data-modal-close>
           <svg class="close-icon" width="14" height="14">
@@ -443,9 +486,9 @@
           <button type="submit" class="modal-submit">Отправить</button>
         </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
-    <script src="./js/submit.js"></script>
+    </div> -->
+    <!-- <script src="./js/modal.js"></script>
+    <script src="./js/submit.js"></script> -->
     <!-- ====================== -->
   </body>
 </html>

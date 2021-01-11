@@ -1,28 +1,16 @@
 // base
 @import './base/reset';
 @import './base/is-hidden';
-
 // utils
 @import './utils/variables';
-@import './utils/utilitiess';
 @import './utils/mixins';
-
+@import './utils/utilitiess';
 // components
 @import './components/common';
 @import './components/container';
-@import './components/navigation-change';
-@import './components/button';
-@import './components/case-premier';
 @import './components/icon-box';
-// @import './components/modal';
-
 //layout
-// @import './layout/header';
 @import './layout/hero';
-// @import './layout/features';
-// @import './layout/case-work';
-// @import './layout/team';
-// @import './layout/customers';
-// @import './layout/footer';
-// @import './layout/navigation';
-// @import './layout/portfolio';
+@import './layout/features';
+@import './layout/case-work';
+@import './layout/team';

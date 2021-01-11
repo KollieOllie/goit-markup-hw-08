@@ -1,24 +1,46 @@
 .features {
   .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 }
 .features-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .features-item {
-  width: 270px;
+  width: 100%;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 1 * 30px) / 2);
+    &:not(:nth-child(even)) {
+      margin-right: 30px;
+    }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 3 * 30px) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 .features-box {
   background-color: $icon-hover;
-  width: 270px;
   height: 120px;
   display: flex;
   align-items: center;
@@ -32,6 +54,10 @@
   text-transform: uppercase;
   color: $title;
   margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .mark-text {
