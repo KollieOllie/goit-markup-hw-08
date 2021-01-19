@@ -8,10 +8,15 @@
 // components
 @import './components/common';
 @import './components/container';
+@import './components/navigation-change';
 @import './components/icon-box';
+@import './components/button';
+@import './components/modal';
 //layout
+@import './layout/header';
 @import './layout/hero';
 @import './layout/features';
 @import './layout/case-work';
 @import './layout/team';
 @import './layout/customers';
+@import './layout/portfolio';

@@ -1,0 +1,150 @@
+.header {
+  position: relative;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  .container {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 768px) {
+      justify-content: unset;
+    }
+  }
+}
+
+.navigation {
+  @include centered-flex();
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: $font-weight-bold;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-right: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+
+  &-studio {
+    color: $secondary-color;
+  }
+}
+.nav-list {
+  @media screen and (max-width: 767px) {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    @include centered-flex();
+  }
+}
+
+.nav-item {
+  @media screen and (max-width: 767px) {
+    margin: 0 auto 40px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    width: min-content;
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.l-white {
+  color: $text-secondary;
+}
+.l-dark {
+  color: $title;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+}
+
+.nav-link {
+  display: block;
+
+  transition: all, $transition-duration-timing;
+  position: relative;
+  font-weight: $font-weight-normal;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $title;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: $font-size-normal;
+    line-height: $line-height-main;
+  }
+}
+
+/* ====== contacts */
+
+.address {
+  @media screen and (max-width: 767px) {
+    display: block;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: min-content;
+    margin-left: auto;
+    padding: 21px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    @include centered-flex();
+    margin-left: auto;
+  }
+}
+.contacts {
+  transition: all, $transition-duration-timing;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-normal;
+  line-height: $line-height-main;
+  letter-spacing: 0.02em;
+  color: $main-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &-icon {
+    transition: all, $transition-duration-timing;
+    margin-right: 10px;
+    fill: $main-color;
+  }
+}
+
+.address-item:not(:last-child) {
+  margin-right: 50px;
+}
