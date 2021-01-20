@@ -20,17 +20,15 @@
     opacity: 0;
     pointer-events: none;
 
-    .modal {
-      transform: translate(-50%, 150%);
-      opacity: 0;
-    }
+    // .modal {
+    //   transform: translate(-50%, 150%);
+    //   opacity: 0;
+    // }
   }
 }
 
 .modal {
-  position: relative;
-  max-width: 450px;
-  width: 100%;
+  width: 450px;
   padding: 40px;
   background-color: $background-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -40,18 +38,28 @@
 
   @media screen and (min-width: 480px) {
     margin: 0 auto;
-  }
-  @media screen and (min-width: 768px) {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 598px;
+    transform: translate(-50%, -50%) scale(1);
   }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    top: calc(50% + 50px);
+  }
+
   @media screen and (min-width: 1200px) {
-    max-width: 528px;
-    // min-width: 528px;
-    // min-height: 581px;
-    // padding: 37px 40px 43px;
+    top: 50%;
+    width: 528px;
+    height: 581px;
+  }
+
+  .is-hidden & {
+    transform: scale(0.9);
+
+    @media screen and (min-width: 480px) {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
   }
 }
 
@@ -83,7 +91,7 @@
 
 .modal-call-to-action {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   font-weight: $font-weight-bold;
   font-size: 20px;
   line-height: 1.15;
@@ -98,7 +106,7 @@
 .form-group,
 .form-group-comment {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
   // display: flex;
   // flex-direction: column;
   transition: all, $transition-duration-timing;
@@ -165,6 +173,7 @@
 .modal-comment {
   padding: 12px 16px;
   height: 120px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   font-weight: $font-weight-lighter;
@@ -195,26 +204,25 @@
 }
 
 .checkbox-group {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto 30px;
   position: relative;
 }
 .modal-checkbox {
-  display: inline-flex;
-  vertical-align: middle;
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin-bottom: 30px;
   // display: flex;
   // justify-content: center;
   // align-items: center;
   font-family: $base-fonts;
   font-style: normal;
   font-weight: $font-weight-lighter;
-  font-size: $font-size-normal;
-  line-height: $line-height-secondary;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: $main-color;
 
@@ -228,9 +236,28 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: $font-size-normal;
+    line-height: $line-height-secondary;
+  }
 }
+.modal-label-agree {
+  font-size: 12px;
+  line-height: 1.17;
+  @media screen and (max-width: 479px) {
+    text-align: center;
+  }
 
-.modal-label-agree::after {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+.modal-label-agree::before {
   content: '';
   display: flex;
   width: 16px;
@@ -240,26 +267,30 @@
   margin-right: 7px;
   transition: all $transition-duration-timing;
 }
-.modal-checkbox-hidden:checked + .modal-label-agree::after {
+.modal-checkbox-hidden:checked + .modal-label-agree::before {
   background-color: $secondary-color;
   background-image: url('../img/icon-check.svg');
   background-origin: border-box;
   background-size: contain;
   border-color: $secondary-color;
 }
-.modal-checkbox-hidden:focus + .modal-label-agree::after {
+.modal-checkbox-hidden:focus + .modal-label-agree::before {
   border-color: $secondary-color;
 }
 .modal-link {
   font-family: $base-fonts;
   font-weight: $font-weight-lighter;
-  font-size: $font-size-normal;
-  line-height: $line-height-secondary;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   font-style: normal;
   margin-left: 0.25em;
   color: $secondary-color;
   text-decoration: underline;
+  @media screen and (min-width: 1200px) {
+    font-size: $font-size-normal;
+    line-height: $line-height-secondary;
+  }
 }
 .modal-submit {
   transition: all, $transition-duration-timing;
