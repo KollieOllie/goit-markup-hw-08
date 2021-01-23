@@ -1,6 +1,15 @@
 .header {
   position: relative;
   border-bottom: 1px solid $border-header;
+
+  @media screen and (max-width: 767px) {
+    background-color: $background-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+  }
   .container {
     display: flex;
     align-items: center;
